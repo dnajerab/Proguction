@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
             vel += new Vector3(5, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.LeftShift)) {  // dash
-            vel = new Vector3(10, 0, 0);
+            vel = new Vector3(7, rb.velocity.y, 0);
         }
         if (Input.GetKeyDown(KeyCode.Space) ) {  // jump
             Debug.Log(vel + " " + jumps);
